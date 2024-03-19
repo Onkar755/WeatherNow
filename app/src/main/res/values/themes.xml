@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.WeatherNow" parent="Theme.MaterialComponents">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="android:navigationBarColor" >@color/color_primary
+        </item>
+        <item name="android:statusBarColor" tools:targerApi="lollipop">@color/color_primary
+        </item>
+        <item name="colorAccent">@color/color_accent</item>
+    </style>
+
+    <style name="Theme.WeatherNow" parent="Base.Theme.WeatherNow">
+        <item name="actionBarStyle">@style/MyTheme.ActionBar</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="MyTheme.ActionBar" parent="Widget.AppCompat.ActionBar">
+        <item name="elevation" >0dp</item>
+        <item name="background">@color/semi_transparent</item>
+    </style>
+</resources>
